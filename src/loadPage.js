@@ -1,3 +1,5 @@
+import logo from './images/logo.png'
+
 function loadPage(){
 
     let content = document.querySelector('#content')
@@ -6,6 +8,10 @@ function loadPage(){
     heading.textContent = "Sam's Steak and Grill"
 
     content.appendChild(heading)
+
+    const img = document.createElement('img')
+    img.src = logo
+    content.appendChild(img)
 
 }
 
